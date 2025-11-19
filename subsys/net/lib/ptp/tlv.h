@@ -370,7 +370,7 @@ enum ptp_tlv_type ptp_tlv_type(struct ptp_tlv *tlv);
  *
  * @return Zero on success, otherwise negative.
  */
-int ptp_tlv_post_recv(struct ptp_tlv *tlv);
+int ptp_tlv_post_recv(struct ptp_tlv **tlv);
 
 /**
  * @brief Function preparing TLV to on-wire format before transmitting.
